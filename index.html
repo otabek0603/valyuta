@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>6-dars</title>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h1 class="my-5 text-center">Valyuta Konverter</h1>
+
+        <div class="rom d-flex">
+            <div class="col-6">
+                <form action="" method="GET" id="currency_form">
+                    <h2 class="sum">So'mni yozing</h2>
+                    <input class="input_som my-3 my-inout" type="text" name="input_currency" placeholder="So'mda Kiriting..." id="input_amound" required>
+                </div>
+
+                <div class="col-6">
+                    <h2 class="sum">Valyutani tanlang</h2>
+                    <select class="input_som input_som2 my-3 my-inout" name="select_currency" id="select_currency_type" required>
+                        <option class="input-kurs" disabled selected hidden>Valyutani tanlang</option>
+                        <option class="input-kurs" value="usd">USD</option>
+                        <option class="input-kurs" value="rub">RUB</option>
+                        <option class="input-kurs" value="eur">EUR</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn border-0 py-6" type="submit">Hisoblash</button>
+        </form>
+
+        <h2 class="my-5" id="result_amound">Hozirda 0.0 summa</h2>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
